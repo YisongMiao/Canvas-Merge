@@ -1,6 +1,6 @@
 # Canvas Merge
 
-This repo produces attendance record for students in Canvas discussions. 
+This repo produces attendance records for Canvas discussions. 
 
 ## Steps
 **Step 1:**
