@@ -1,4 +1,4 @@
-# save_canvas_discussion
+## save_canvas_discussion
 Script that will convert discussion posts from Canvas LMS and save them to files. Canvas allows you to download all submissions to assignments, but there is no way to do the same thing with discussion posts.  However, the data is available in JSON format, it just needs parsed into readable files.  This script will parse the data and save it into individual HTML files for each student.  The format of the HTML files is the same as the format of the HTML files from downloaded assignment submissions.
 
 Unfortunately, Canvas requires Bearer authentication to get access to the data, which is a pain to do through the API and you have to go through institutional access.  So this Python script cannot get the data directly from the Canvas website, you have to download it into a text file first.
