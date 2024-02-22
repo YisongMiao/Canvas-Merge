@@ -10,7 +10,27 @@ Run `save_canvas_discussion.py` (credit to https://github.com/dsp444) targeting 
 Execute `canvas2csv.py` with the JSON discussion data to automatically search for and match student names in a specified .csv roster file. It then updates and outputs a CSV file with the latest attendance record.
 
 ## Command Lines
+**Step 1:**
 
+`python save_canvas_discussion.py nus 12345 123456`
+It will produce something: 
+https://canvas.nus.edu.sg/api/v1/courses/12345/discussion_topics/123456/view?include_new_entries=1&include_enrollment_state=1
+
+You only need to replace those codes with your real course ID and discussion ID.
+
+**Step 2:**
+
+Running pre-lecture merges:
+
+`python canvas2csv.py --week 2 --format pre`
+
+Running in-lecture merges:
+
+`python canvas2csv.py --week 2 --format in --lecchoice L1` and 
+
+`python canvas2csv.py --week 2 --format in --lecchoice L2`
+
+Alternatively you can also `bash canvas2csv.sh`
 
 
 Followings are the original readme forked from https://github.com/dsp444/save_canvas_discussion We thank their efforts!
