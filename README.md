@@ -7,7 +7,7 @@ This repo produces attendance records for Canvas discussions.
 Run `save_canvas_discussion.py` (credit to https://github.com/dsp444) targeting the desired Canvas discussion page. This script captures all the necessary discussion data and saves it as a JSON file. 
 
 **Step 2:**
-Execute canvas2csv.py with the JSON discussion data to automatically search for and match student names in a specified .csv roster file. It then updates and outputs a CSV file with the latest attendance record.
+Execute `canvas2csv.py` with the JSON discussion data to automatically search for and match student names in a specified .csv roster file. It then updates and outputs a CSV file with the latest attendance record.
 
 ## Command Lines
 
